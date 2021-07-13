@@ -1,0 +1,7 @@
+components:
+  wsDaemon:
+    containerRuntime:
+      nodeRoots:
+        - /run/containers/storage/overlay-containers
+      containerd:
+        socket: /var/run/crio/crio.sock
