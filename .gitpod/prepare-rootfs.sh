@@ -16,7 +16,7 @@ cd $outdir
 
 tar -xvf rootfs.tar.gz
 
-qemu-img resize bionic-server-cloudimg-amd64.img +20G
+qemu-img resize --preallocation=off bionic-server-cloudimg-amd64.img +20G
 
 netconf="
 network:
