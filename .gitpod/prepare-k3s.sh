@@ -48,3 +48,4 @@ echo "✅ k3s server is ready"
 kubectl get pods --all-namespaces
 
 touch "${k3sreadylock}"
+alias igp="helm repo add gitpod.io https://charts.gitpod.io && helm install --values values.base.yaml --values values.k3s.yaml gitpod gitpod.io/gitpod --version='0.9.0'"
